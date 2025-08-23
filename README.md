@@ -1,0 +1,1 @@
+![Python](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2021%2F10%2FPython-Emblem.png&f=1&nofb=1&ipt=e58fd6a25c0ec33171ed61d90cfb36c807ed4d88da4e14cd2cb99142fc71ffd2)
