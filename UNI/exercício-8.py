@@ -1,0 +1,6 @@
+xa = float(input('Qual o x de A?: '))
+ya = float(input('Qual o y de A?: '))
+xb = float(input('Qual o x de B?: '))
+yb = float(input('Qual o y de B?: '))
+dab = (((xb-xa)**2)+((yb-ya)**2)**0.5)
+print(f'A distância entre A e B é de {dab}.')
