@@ -1,4 +1,4 @@
-x = 0
+"""x = 0
 while x < 10:
     print(x)
     x = x + 1
@@ -50,3 +50,4 @@ z1 = zs[0]  # gets the 0th guy
 z2 = zs[1]
 
 print(f"z1={z1}")
+"""
