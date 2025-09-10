@@ -1,0 +1,654 @@
+Parte 1
+
+1. Quais são os principais tipos de dados primitivos em Python? Dê um exemplo de cada.
+
+Números inteiros ( int ) Exemplos: 5, -5, 6
+Sequência de caracteres ( str ) Exemplos: “casa” , ‘joão pedro’
+Números reais ( float) Exemplos: 2.32 , -5.0
+Lógico ( bool )Exemplos: true, false
+(Há também 'complex') mas isto não estava no slide então...
+
+2. Explique a diferença entre os tipos de dados int, float e str
+
+int se refere a números inteiros, enquanto float é voltado para a representação de números na escala decimal. str é apenas texto, uma 'sequência de caracteres'. E bool se refere a argumentos lógicos.
+
+3.O que acontece se tentarmos somar uma string com um número inteiro em Python? Por quê?
+
+Ocorre um erro. Porque eles não são da mesma classe. Não conversam entre si.
+
+
+4. Qual a função utilizada para ler dados digitados pelo usuário? Em qual tipo de dado a entrada é armazenada por padrão?
+
+input()   O tipo de entrada padrão é string
+
+
+
+5. Qual a função usada para mostrar informações na tela? Como ela pode ser usada para concatenar textos e números?
+
+print()   dentro de print pode se representar str entre '' e utilizando f antes, dentro das aspas pode se usar {} para representar variáveis do código
+
+
+6. Explique a diferença entre os operadores = e == em Python.
+
+= seria, no português, algo como "Recebe".
+== seria, o argumento matemático "igual" mesmo.
+
+
+7. Explique a diferença entre os operadores relacionais ==, !=, >, <, >= e <=.
+
+== é 'igual'
+!= é 'não é igual'
+> é 'maior que'
+< é 'menor que'
+>= é 'maior ou igual a'
+<= é 'menor ou igual a'
+
+8. Para que servem os operadores lógicos and, or e not? Dê um exemplo de situação em que cada um seria usado.
+
+'and' necessita que todos os argumentos sejam verdade:
+	if x=1 and y=2:
+		print(f'x={x} e y={y})
+'or' necessita que pelo menos um argumento seja verdade:
+	if x=1 or x=2:
+		print(f'x={x}')
+'not' inverte o verdadeiro valor.
+	
+	
+
+9. O que é uma estrutura condicional em Python e em que situações ela é necessária?
+
+
+
+
+
+10. Qual a diferença entre usar apenas if, usar if...else e usar if...elif...else?
+
+se ouver mais if-elses dentro de um if-else, ao invés de formata-los dessa mesma forma todas as vezes o elif abrevia a formatação.
+
+
+
+11. Dada a expressão booleana:
+idade = 20
+tem_carteira = True
+if idade >= 18 and tem_carteira:
+print("Pode dirigir")
+else:
+print("Não pode dirigir")
+Explique passo a passo como o Python avalia essa condição e qual mensagem será exibida.
+
+Python registra na memória que idade = 20 e que tem_carteira = true
+Depois verifica com o condicional if se idade é maior ou igual a 18 e se tem_carteira é verdade.
+A mensagem que será exibida é "Pode dirigir"
+
+
+
+
+Parte 2
+
+12. Qual a diferença entre uma variável e uma constante? Python possui constantes nativas?
+
+Variável é um valor que você define que pode mudar durante o programa. Mas é um conceito matemático, normalmente um valor ainda não definido mas que você ainda consegue usar. E constante é um valor imutável, como pi.
+Python não tem constantes nativas (que travam o valor).
+Mas há uma convenção de se usar letras maiúsculas para indicar que algo é constante.
+
+
+13. O que significa dizer que o Python é uma linguagem de tipagem dinâmica?
+
+significa que o tipo de uma variável é determinado em tempo de execução, com base no valor atribuído a ela, e não em tempo de compilação
+
+
+
+14. O que acontece se atribuirmos valores de tipos diferentes a uma mesma variável em momentos distintos do programa?
+
+A variável vai 'atualizar' o seu valor
+
+
+
+15. Por que precisamos, às vezes, fazer conversão de tipos (casting) em Python? Cite um exemplo.
+
+Para realizar operações entre dados de tipos diferentes. 
+Exemplo:
+idade_str = "25"
+idade_int = int(idade_str)  # Conversão explícita da string para inteiro
+soma = idade_int + 10  
+
+
+16. Em uma expressão como 10/3 e 10//3, qual a diferença no resultado?
+
+10/3 = 3.333333333....
+10//3 = 3 --> Divisão de inteiros
+
+
+17. O que é um operador de módulo (%) e em que tipo de problema ele pode ser útil?
+
+ele mostra o 'resto' de uma divisão. Pode ser útil para problemas de par e impar
+
+
+
+18. Qual a diferença entre escrever:
+if x > 5:
+print("Maior que 5")
+e
+if x > 5:
+print("Maior que 5")
+else:
+print("Menor ou igual a 5")
+
+Que se x não for maior que 5 (no primeiro) o código não vai devolver valor algum
+
+
+
+19. Explique o que significa a indentação em Python e porque ela é obrigatória.
+
+É a forma de representar uma sequencia de funções. Se uma está "dentro da outra ou não" é relevante para a compreensão das operações
+
+
+
+20. Se executarmos o código:
+a = "10"
+b = 2
+print(a * b)
+Qual será o resultado? Por que Python permite essa operação?
+
+O resultado será 1010. Python permite porque ele entende dentro de sua lógica o programador quis imprimir a string "10" duas vezes.
+
+
+
+
+Parte 3
+
+
+21. O que é uma expressão booleana em Python? Dê três exemplos.
+
+É uma expressão que resulta em true ou false
+Exemplo:
+5 == 5 --> true
+10 < 3 --> false
+7 != 8 --> true
+
+
+22. Qual a diferença entre os tipos input() e int(input())?
+
+input() têm por padrão o tipo str, enquanto int(input()) já converte o input str em int
+
+
+
+23. Explique o que significa a operação:
+x = x + 1
+Existe uma forma abreviada de escrever isso?
+
+x recebe x+1, ou seja, ele atualizou o valor de x para x+1
+uma forma abreviada: x+=1
+
+
+24. Qual a diferença entre print("Olá", nome) e print("Olá " + nome)?
+
+print("Olá", nome) sairá: Olá nome
+e print("Olá " + nome) sairá: Olánome
+
+
+25. Em Python, o que acontece se tentarmos dividir um número por zero?
+
+Acontece um erro. Por tentar fazer uma operação impossível
+
+
+
+26. Se x = 5 e y = "5", qual será o resultado das comparações:
+
+a) x == y		false
+b) x == int(y)		true
+c) str(x) == y		true
+
+
+27. Se o código for:
+idade = 17
+if idade >= 18:
+print("Maior de idade")
+else:
+print("Menor de idade")
+
+
+o resultado sairá "Menor de idade"
+
+
+
+
+Parte 4 – Análise de código
+
+
+28.
+x = 10
+y = 20
+if x > 5 and y > 15:
+print("As duas condições são verdadeiras")
+else:
+print("Pelo menos uma é falsa")
+➡ Qual será a saída?
+
+
+
+
+
+29.
+idade = 16
+responsavel = True
+if idade >= 18 or responsavel == True:
+print("Entrada permitida")
+else:
+print("Entrada negada")
+➡ O que será exibido?
+
+
+
+
+
+30.
+n = 15
+if n % 3 == 0 and n % 5 == 0:
+print("Múltiplo de 3 e 5")
+elif n % 3 == 0:
+print("Múltiplo de 3")
+elif n % 5 == 0:
+print("Múltiplo de 5")
+else:
+print("Não é múltiplo de 3 nem de 5")
+➡ Qual será a saída?
+
+
+
+
+
+31.
+media = 7
+frequencia = 60
+if media >= 7 and frequencia >= 75:
+print("Aprovado")
+elif media >= 5 and frequencia >= 75:
+print("Recuperação")
+else:
+print("Reprovado")
+➡ Qual será a saída com media = 7 e frequencia = 60?
+
+
+
+
+
+32.
+senha = "abcd"
+usuario = "admin"
+if usuario == "admin":
+if senha == "1234":
+print("Login bem-sucedido")
+else:
+print("Senha incorreta")
+else:
+print("Usuário inválido")
+➡ Qual será a saída?
+
+
+
+
+
+33.
+valor = 250
+if valor > 1000:
+desconto = 0.2
+elif valor > 500:
+desconto = 0.1
+elif valor > 100:
+desconto = 0.05
+else:
+desconto = 0
+print("Desconto aplicado:", desconto * 100, "%")
+➡ Qual será a saída?
+
+
+
+
+
+34.
+a = 5
+b = 10
+c = 15
+if a < b and b < c:
+print("Crescente")
+elif a > b and b > c:
+print("Decrescente")
+else:
+print("Não é ordem estrita")
+➡ Qual será a saída?
+
+
+
+
+
+35.
+nota1 = 8
+nota2 = 6
+media = (nota1 + nota2) / 2
+if media >= 7:
+resultado = "Aprovado"
+else:
+if media >= 5:
+resultado = "Recuperação"
+else:
+resultado = "Reprovado"
+print("Resultado final:", resultado)
+➡ Qual será a saída?
+
+
+
+
+
+36.
+cor = "vermelho"
+if cor == "azul" or cor == "verde":
+print("Cor fria")
+elif cor == "vermelho" or cor == "amarelo":
+print("Cor quente")
+else:
+print("Cor neutra")
+➡ Qual será a saída?
+
+
+
+
+
+37.
+idade = 70
+if idade < 12:
+categoria = "Criança"
+elif idade < 18:
+categoria = "Adolescente"
+elif idade < 60:
+categoria = "Adulto"
+else:
+categoria = "Idoso"
+print("Categoria:", categoria)
+➡ Qual será a saída?
+
+
+
+
+
+38.
+idade = 20
+renda = 2500
+if idade >= 18:
+if renda >= 2000:
+print("Financiamento aprovado")
+else:
+print("Renda insuficiente")
+else:
+print("Idade mínima não atingida")
+➡ Qual será a saída?
+
+
+
+
+
+39.
+nota1 = 6
+nota2 = 7
+nota3 = 5
+media = (nota1 + nota2 + nota3) / 3
+if media >= 7:
+status = "Aprovado"
+elif media >= 5:
+if nota1 < 5 or nota2 < 5 or nota3 < 5:
+status = "Recuperação por nota baixa"
+else:
+status = "Recuperação por média"
+else:
+status = "Reprovado"
+print(status)
+➡ Qual será a saída?
+
+
+
+
+
+40.
+a = 10
+b = 20
+c = 30
+if a < b < c:
+print("Ordem crescente")
+elif a > b > c:
+print("Ordem decrescente")
+else:
+print("Sem ordem definida")
+➡ Qual será a saída?
+
+
+
+
+
+41.
+senha = "admin123"
+usuario = "root"
+if usuario == "admin" and senha == "1234":
+print("Login admin")
+elif usuario == "root" and senha == "admin123":
+print("Login root")
+else:
+print("Acesso negado")
+➡ Qual será a saída?
+
+
+
+
+
+42.
+idade = 22
+curso = "Engenharia"
+if idade >= 18 and (curso == "Engenharia" or curso == "Computação"):
+print("Pode participar do estágio")
+else:
+print("Não pode participar")
+➡ Qual será a saída?
+
+
+
+
+
+43.
+temperatura = 30
+umidade = 70
+if temperatura > 35:
+print("Muito quente")
+elif temperatura > 25 and umidade > 60:
+print("Clima abafado")
+elif temperatura > 25:
+print("Quente")
+else:
+print("Clima agradável")
+➡ Qual será a saída?
+
+
+
+
+
+44.
+x = 12
+if x % 2 == 0:
+if x % 3 == 0:
+print("Divisível por 2 e 3")
+else:
+print("Divisível apenas por 2")
+else:
+if x % 3 == 0:
+print("Divisível apenas por 3")
+else:
+print("Não divisível por 2 nem por 3")
+➡ Qual será a saída?
+
+
+
+
+
+45.
+idade = 30
+salario = 4000
+tempo_servico = 3
+if idade > 25 and salario > 3000:
+if tempo_servico >= 2:
+print("Promoção concedida")
+else:
+print("Tempo insuficiente")
+else:
+print("Não atende aos critérios")
+➡ Qual será a saída?
+
+
+
+
+
+46.
+a = 5
+b = 5
+c = 10
+if a == b and b == c:
+print("Todos iguais")
+elif a == b or b == c or a == c:
+print("Dois valores iguais")
+else:
+print("Todos diferentes")
+➡ Qual será a saída?
+
+
+
+
+
+47.
+nota = 8
+faltas = 12
+if nota >= 7:
+if faltas > 10:
+print("Reprovado por faltas")
+else:
+print("Aprovado")
+else:
+print("Reprovado por nota")
+➡ Qual será a saída?
+
+
+
+
+
+Parte 5 
+
+
+
+1. Peça ao usuário para digitar um número inteiro e informe se ele é positivo, negativo ou
+zero.
+
+
+
+
+
+2. Solicite a idade do usuário e informe se ele é maior ou menor de idade (18 anos).
+
+
+
+
+
+3. Leia um número e informe se ele é par ou ímpar.
+
+
+
+
+
+4. Peça o nome de um usuário e imprima:
+a. "Olá, [nome]" se o nome não estiver vazio.
+b. "Nome inválido" se o usuário não digitar nada.
+
+
+
+
+
+5. Leia duas notas de um aluno, calcule a média e informe:
+a. "Aprovado" se a média ≥ 7
+b. "Recuperação" se a média ≥ 5 e < 7
+c. "Reprovado" se a média < 5
+
+
+
+
+
+6. Solicite três números e mostre qual deles é o maior.
+
+
+
+
+
+7. Leia a idade e o tempo de serviço de um funcionário e informe se ele tem direito à
+aposentadoria (idade ≥ 60 ou tempo de serviço ≥ 35 anos).
+
+
+
+
+
+8. Peça uma senha e verifique:
+a. "Acesso permitido" se a senha estiver correta
+b. "Acesso negado" se estiver incorreta
+
+
+
+
+
+9. Leia dois números e informe:
+a. "Múltiplo" se o primeiro for múltiplo do segundo
+b. "Não é múltiplo" caso contrário
+
+
+
+
+
+10. Leia o peso e a altura de uma pessoa, calcule o IMC e informe:
+a. "Abaixo do peso" < 18.5
+b. "Peso normal" 18.5–24.9
+c. "Sobrepeso" 25–29.9
+d. "Obesidade" ≥ 30
+
+
+
+
+
+11. Leia a idade de um aluno e três notas. Informe se ele está:
+a. "Aprovado" se média ≥ 7 e idade ≥ 18
+b. "Recuperação" se média ≥ 5 e < 7 e idade ≥ 18
+c. "Reprovado" em qualquer outro caso
+
+
+
+
+
+12. Solicite o dia da semana como número (1-7) e informe se é dia útil, sábado ou domingo.
+
+
+
+
+
+13. Leia três números e informe se eles estão em ordem crescente, decrescente ou sem
+ordem.
+
+
+
+
+
+14. Peça a cor de um semáforo (vermelho, amarelo, verde) e o número de carros esperando.
+Informe:
+a. "Pare" se vermelho
+b. "Atenção" se amarelo e carros > 0
+c. "Siga" se verde ou amarelo sem carros
+
+
+
+
+
+15. Leia idade, tempo de experiência e cargo de um candidato e informe se ele é elegível para
+promoção:
+a. Idade ≥ 25 e experiência ≥ 2 anos e cargo = "Analista" → "Promoção concedida"
+b. Caso contrário → "Não elegível"
+
