@@ -225,7 +225,7 @@ else:
 print("Pelo menos uma é falsa")
 ➡ Qual será a saída?
 
-
+"As duas condições são verdadeiras"
 
 
 
@@ -238,7 +238,7 @@ else:
 print("Entrada negada")
 ➡ O que será exibido?
 
-
+"Entrada permitida"
 
 
 
@@ -254,7 +254,7 @@ else:
 print("Não é múltiplo de 3 nem de 5")
 ➡ Qual será a saída?
 
-
+"Múltiplo de 3 e 5"
 
 
 
@@ -269,7 +269,7 @@ else:
 print("Reprovado")
 ➡ Qual será a saída com media = 7 e frequencia = 60?
 
-
+"Recuperação"
 
 
 
@@ -285,7 +285,7 @@ else:
 print("Usuário inválido")
 ➡ Qual será a saída?
 
-
+"Senha incorreta"
 
 
 
@@ -302,7 +302,7 @@ desconto = 0
 print("Desconto aplicado:", desconto * 100, "%")
 ➡ Qual será a saída?
 
-
+"Desconto aplicado: 5 %"
 
 
 
@@ -318,7 +318,7 @@ else:
 print("Não é ordem estrita")
 ➡ Qual será a saída?
 
-
+"Crescente"
 
 
 
@@ -336,7 +336,7 @@ resultado = "Reprovado"
 print("Resultado final:", resultado)
 ➡ Qual será a saída?
 
-
+"Resultado final: Aprovado"
 
 
 
@@ -350,7 +350,7 @@ else:
 print("Cor neutra")
 ➡ Qual será a saída?
 
-
+"Cor quente"
 
 
 
@@ -367,7 +367,7 @@ categoria = "Idoso"
 print("Categoria:", categoria)
 ➡ Qual será a saída?
 
-
+"Categoria: Idoso"
 
 
 
@@ -383,7 +383,7 @@ else:
 print("Idade mínima não atingida")
 ➡ Qual será a saída?
 
-
+"Financiamento aprovado"
 
 
 
@@ -404,6 +404,7 @@ status = "Reprovado"
 print(status)
 ➡ Qual será a saída?
 
+"Recuperação por média"
 
 
 
@@ -420,7 +421,7 @@ else:
 print("Sem ordem definida")
 ➡ Qual será a saída?
 
-
+"Ordem crescente"
 
 
 
@@ -435,7 +436,7 @@ else:
 print("Acesso negado")
 ➡ Qual será a saída?
 
-
+"Login root"
 
 
 
@@ -448,7 +449,7 @@ else:
 print("Não pode participar")
 ➡ Qual será a saída?
 
-
+"Pode participar do estágio"
 
 
 
@@ -465,7 +466,7 @@ else:
 print("Clima agradável")
 ➡ Qual será a saída?
 
-
+"Clima abafado"
 
 
 
@@ -483,7 +484,7 @@ else:
 print("Não divisível por 2 nem por 3")
 ➡ Qual será a saída?
 
-
+"Divisível por 2 e 3"
 
 
 
@@ -500,7 +501,7 @@ else:
 print("Não atende aos critérios")
 ➡ Qual será a saída?
 
-
+"Promoção concedida"
 
 
 
@@ -516,7 +517,7 @@ else:
 print("Todos diferentes")
 ➡ Qual será a saída?
 
-
+"Dois valores iguais"
 
 
 
@@ -532,7 +533,7 @@ else:
 print("Reprovado por nota")
 ➡ Qual será a saída?
 
-
+"Reprovado por faltas"
 
 
 
