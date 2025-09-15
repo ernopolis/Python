@@ -57,8 +57,8 @@ print()   dentro de print pode se representar str entre '' e utilizando f antes,
 
 9. O que é uma estrutura condicional em Python e em que situações ela é necessária?
 
-
-
+é uma função que usa valores e argumenta emcima deles. if, else, etc...
+é necessario pra situações em que o output depende mais de um tipo de input, e deve checar a congruencia entre eles.
 
 
 10. Qual a diferença entre usar apenas if, usar if...else e usar if...elif...else?
@@ -544,21 +544,30 @@ Parte 5
 1. Peça ao usuário para digitar um número inteiro e informe se ele é positivo, negativo ou
 zero.
 
-
-
-
+n = int(input('Digite um número inteiro: '))
+if n < 0:
+	print('Este número é negativo')
+elif n = 0:
+	print('Este número é zero')
+else:
+	print('Este número é positivo')
 
 2. Solicite a idade do usuário e informe se ele é maior ou menor de idade (18 anos).
 
-
-
+i = int(input('Informe sua idade: '))
+if i < 18:
+	print('Você é menor de idade')
+else:
+	print('Você é maior de idade')
 
 
 3. Leia um número e informe se ele é par ou ímpar.
 
-
-
-
+n = int(input('Insira um número: '))
+if n % 2 == 0:
+	print('Este número é par')
+else:
+	print('Este número impar')
 
 4. Peça o nome de um usuário e imprima:
 a. "Olá, [nome]" se o nome não estiver vazio.
